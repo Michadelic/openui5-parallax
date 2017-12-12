@@ -65,13 +65,6 @@
 
 	<script>
 		sap.ui.getCore().attachInit(function () {
-			// set up model
-			var oModel = new sap.ui.model.json.JSONModel({
-				size: 300,
-				text: "Hello UI5Lab!"
-			});
-			sap.ui.getCore().setModel(oModel);
-
 			// create xml view
 			var oView = sap.ui.xmlview({viewContent: jQuery('#view').html()});
 			oView.getContent()[0].getLayers().forEach(function (oLayer) {
