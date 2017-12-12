@@ -25,7 +25,7 @@ npm install
 npm start
 ```
 
-5. Open the ui5lab browser to see the libaray samples: http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/)
+5. Open the ui5lab browser to see the libary samples: http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/)
 
 ### Directions
 
