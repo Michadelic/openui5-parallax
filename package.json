@@ -1,6 +1,6 @@
 {
   "name": "openui5-parallax",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A library wrapping parallax.js in UI5 controls to create stunning layered effects",
   "private": false,
   "scripts": {
