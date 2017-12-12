@@ -6,14 +6,6 @@
 
 	<title>Sample - openui5.parallax.ParallaxScene</title>
 
-	<base href="../../../../">
-	<!--[if lte IE 9]><script>
-	(function() {
-		var baseTag = document.getElementsByTagName('base')[0];
-		baseTag.href = baseTag.href;
-	})();
-	</script><![endif]-->
-
 	<style>
 		html {
 			height: 100%;
@@ -49,8 +41,11 @@
 	</style>
 
 	<script id="sap-ui-bootstrap"
-		src="resources/sap-ui-core.js"
+		src="../../../../resources/sap-ui-core.js"
 		data-sap-ui-libs="openui5.parallax"
+		data-sap-ui-resourceroots='{
+			"openui5.parallax.example" : "./"
+		}'
 		data-sap-ui-theme="sap_belize">
 	</script>
 
@@ -61,9 +56,9 @@
 			xmlns:mvc="sap.ui.core.mvc"
 			xmlns:p="openui5.parallax">
 			<p:ParallaxScroller id="background" class="background" speedY="3">
-				<p:ParallaxLayer id="parallaxClouds1" src="test-resources/openui5/parallax/sample/images/drop1.png" depth="10" class="drops transparent"></p:ParallaxLayer>
-				<p:ParallaxLayer id="parallaxClouds2" src="test-resources/openui5/parallax/sample/images/drop2.png" depth="5" class="drops transparent"></p:ParallaxLayer>
-				<p:ParallaxLayer id="parallaxClouds3" src="test-resources/openui5/parallax/sample/images/drop3.png" depth="2" class="drops moreTransparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxClouds1" src="images/drop1.png" depth="10" class="drops transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxClouds2" src="images/drop2.png" depth="5" class="drops transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxClouds3" src="images/drop3.png" depth="2" class="drops moreTransparent"></p:ParallaxLayer>
 			</p:ParallaxScroller>
 		</mvc:View>
 	</script>
@@ -79,6 +74,9 @@
 
 			// create xml view
 			var oView = sap.ui.xmlview({viewContent: jQuery('#view').html()});
+			oView.getContent()[0].getLayers().forEach(function (oLayer) {
+				oLayer.setSrc(jQuery.sap.getModulePath("openui5.parallax.example", "/" + oLayer.getSrc()));
+			});
 			oView.placeAt("content");
 		});
 	</script>
