@@ -13,16 +13,16 @@
 				"name": "ParallaxScroller",
 				"type": "control",
 				"version": 1.0,
-				"description": "A parallax scene with multiple layers",
+				"description": "Control for creating parallax scenes with multiple layers",
 				"samples": [
 					{
 						"id": "ParallaxScene",
-						"name": "Parallax Scene",
-						"description": "A parallax scene with multiple layers: hilds, clouds, icons"
+						"name": "Parallax Scene (landscape)",
+						"description": "A landscape parallax scene with multiple layers containing hills and clouds"
 					},
 					{
 						"id": "ParallaxSceneFast",
-						"name": "Parallax Scene (Near)",
+						"name": "Parallax Scene (abstract)",
 						"description": "An abstract parallax scene with artsy layers and fast movement"
 					}
 				]
