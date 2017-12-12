@@ -1,6 +1,6 @@
 # OpenUI5-parallax
 
-A library wrapping [parallax.js](https://github.com/wagerfield/parallax) in UI5 controls to create stunning layered effects, for more information check out the [demo](http://matthew.wagerfield.com/parallax/).
+A library wrapping [parallax.js](https://github.com/wagerfield/parallax) in UI5 controls to create stunning layered effects, for more information check out the [parallax.js demo](http://matthew.wagerfield.com/parallax/).
 The [UI5Lab-browser](https://github.com/openui5/UI5Lab-browser) is loaded as a dependency to display the library content for testing during development.
 
 ![Preview](Preview.png?raw=true)
