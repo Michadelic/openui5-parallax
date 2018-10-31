@@ -1,0 +1,21 @@
+specVersion: '0.1'
+metadata:
+  name: openui5-parallax
+type: library
+---
+specVersion: "0.1"
+kind: extension
+type: project-shim
+metadata:
+  name: openui5-parallax.thirdparty
+shims:
+  configurations:
+    parallax-js:
+      specVersion: "0.1"
+      type: module
+      metadata:
+        name: parallax-js
+      resources:
+        configuration:
+          paths:
+            /resources/openui5/parallax/thirdparty/: "dist"
