@@ -2,10 +2,22 @@
   "name": "openui5-parallax",
   "version": "1.0.0",
   "description": "A library wrapping parallax.js in UI5 controls to create stunning layered effects",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michadelic/openui5-parallax.git"
+  },
+  "ui5lab": {
+    "namespace": "openui5.parallax",
+    "icon": "dimension",
+    "displayName": "Parallax"
+  },
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
-    "start": "ui5 serve -o"
+    "prepare": "node prepare",
+    "start": "ui5 serve -o",
+    "build": "ui5 build"
   },
   "dependencies": {
     "@openui5/sap.ui.core": "^1.56.2",
@@ -16,7 +28,8 @@
     "parallax-js": "^3.1.0"
   },
   "devDependencies": {
-    "ui5lab-browser": "^0.1.0",
+    "@ui5/cli": "^0.2.3",
+    "ui5lab-browser": "^1.0.0",
     "fs-extra": "^3.0.0"
   }
 }

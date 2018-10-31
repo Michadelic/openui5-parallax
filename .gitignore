@@ -3,3 +3,4 @@ node_modules
 bower_components
 dist
 src/openui5/parallax/thirdparty
+test/ui5lab/browser/

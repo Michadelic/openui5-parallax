@@ -2,7 +2,10 @@
 src
 test
 node_modules
-bower_components
 .idea
 .editorconfig
 .eslintrc
+
+# only for testing, these resources should not be delivered but are easy to forget
+test/ui5lab/browser/
+dist/test-resources/ui5lab/browser/

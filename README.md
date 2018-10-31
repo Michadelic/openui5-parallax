@@ -19,7 +19,7 @@ cd openui5-parallax
 npm install
 ```
 
-4. Run npm start to lint, build and run a local server (have a look into `Gruntfile.js` to see all the tasks).
+4. Run npm start to run a local server with the UI5 tooling
 ```sh
 npm start
 ```
